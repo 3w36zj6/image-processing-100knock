@@ -49,7 +49,7 @@ img = cv2.imread("imori.jpg").astype(np.float32)
 out = BGR2GRAY(img)
 
 # Otsu's binarization
-out = otsu_binalization(out)
+out = otsu_binarization(out)
 
 # Save result
 cv2.imwrite("out.jpg", out)
