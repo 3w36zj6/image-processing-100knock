@@ -15,20 +15,38 @@ def BGR2GRAY(img):
 
 # max-min filter
 def max_min_filter(img, K_size=3):
-	H, W, C = img.shape
+	if len(img.shape) == 3:
+		H, W, C = img.shape
 
-	## Zero padding
-	pad = K_size // 2
-	out = np.zeros((H + pad * 2, W + pad * 2), dtype=np.float)
-	out[pad: pad + H, pad: pad + W] = gray.copy().astype(np.float)
-	tmp = out.copy()
+		## Zero padding
+		pad = K_size // 2
+		out = np.zeros((H + pad * 2, W + pad * 2, 3), dtype=np.float)
+		out[pad: pad + H, pad: pad + W] = gray.copy().astype(np.float)
+		tmp = out.copy()
 
-	# filtering
-	for y in range(H):
-		for x in range(W):
-			out[pad + y, pad + x] = np.max(tmp[y: y + K_size, x: x + K_size]) - np.min(tmp[y: y + K_size, x: x + K_size])
+		# filtering
+		for y in range(H):
+			for x in range(W):
+				for c in range(3):
+					out[pad + y, pad + x, c] = np.max(tmp[y: y + K_size, x: x + K_size, c]) - np.min(tmp[y: y + K_size, x: x + K_size, c])
 
-	out = out[pad: pad + H, pad: pad + W].astype(np.uint8)
+		out = out[pad: pad + H, pad: pad + W].astype(np.uint8)
+
+	else:
+		H, W = img.shape
+
+		## Zero padding
+		pad = K_size // 2
+		out = np.zeros((H + pad * 2, W + pad * 2), dtype=np.float)
+		out[pad: pad + H, pad: pad + W] = gray.copy().astype(np.float)
+		tmp = out.copy()
+
+		# filtering
+		for y in range(H):
+			for x in range(W):
+				out[pad + y, pad + x] = np.max(tmp[y: y + K_size, x: x + K_size]) - np.min(tmp[y: y + K_size, x: x + K_size])
+
+		out = out[pad: pad + H, pad: pad + W].astype(np.uint8)
 
 	return out
 
