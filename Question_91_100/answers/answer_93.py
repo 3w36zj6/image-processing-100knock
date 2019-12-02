@@ -21,6 +21,10 @@ def iou(a, b):
 	# get height of IoU
     iou_h = iou_y2 - iou_y1
 
+	# no overlap
+    if iou_w < 0 or iou_h < 0:
+	return 0.0
+
 	# get area of IoU
     area_iou = iou_w * iou_h
 	# get overlap ratio between IoU and all area

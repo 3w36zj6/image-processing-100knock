@@ -10,7 +10,7 @@ def nn_interpolate(img, ax=1, ay=1):
 	aH = int(ay * H)
 	aW = int(ax * W)
 
-	y = np.arange(aH).repeat(aW).reshape(aW, -1)
+	y = np.arange(aH).repeat(aW).reshape(aH, -1)
 	x = np.tile(np.arange(aW), (aH, 1))
 	y = np.round(y / ay).astype(np.int)
 	x = np.round(x / ax).astype(np.int)

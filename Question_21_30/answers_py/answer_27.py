@@ -11,7 +11,7 @@ def bc_interpolate(img, ax=1., ay=1.):
 	aW = int(ax * W)
 
 	# get positions of resized image
-	y = np.arange(aH).repeat(aW).reshape(aW, -1)
+	y = np.arange(aH).repeat(aW).reshape(aH, -1)
 	x = np.tile(np.arange(aW), (aH, 1))
 	y = (y / ay)
 	x = (x / ax)
