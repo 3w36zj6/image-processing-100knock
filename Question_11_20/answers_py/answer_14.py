@@ -15,7 +15,11 @@ def BGR2GRAY(img):
 
 # different filter
 def different_filter(img, K_size=3):
-	H, W, C = img.shape
+	if len(img.shape) == 3:
+		H, W, C = img.shape
+	else:
+		img = np.expand_dims(img, axis=-1)
+		H, W, C = img.shape
 
 	# Zero padding
 	pad = K_size // 2
