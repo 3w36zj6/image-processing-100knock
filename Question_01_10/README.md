@@ -60,19 +60,37 @@ y = { 0 (if y < 128)
 大津の二値化とは判別分析法と呼ばれ、二値化における分離の閾値を自動決定する手法である。
 これは**クラス内分散**と**クラス間分散**の比から計算される。
 
+グレースケールの輝度値（ピクセルの値）のヒストグラムはこうなる。
+
+```python
+import cv2
+import matplotlib.pyplot as plt
+img = cv2.imread('assets/imori.jpg')
+gray = 0.2126 * img[..., 2] + 0.7152 * img[..., 1] + 0.0722 * img[..., 0]
+plt.hist(gray.ravel(), bins=255, rwidth=0.8, range=(0, 255))
+plt.xlabel('value')
+plt.ylabel('appearance')
+plt.show()
+```
+
+<img src="assets/histogram-Gray.jpg" width=400>
+
+二値化はある値を境界にして、０か１にする方法だけど、
 
 - 閾値t未満をクラス0, t以上をクラス1とする。
 - w0, w1 ... 閾値tにより分離された各クラスの画素数の割合 (w0 + w1 = 1を満たす)
 - S0^2, S1^2 ... 各クラスの画素値の分散
 - M0, M1 ... 各クラスの画素値の平均値
 
+<img src="assets/histogram-Gray-1.png" width=400>
+
 とすると、
 
-<img src="assets/otsu_binary_1.png" width=300>
+<img src="assets/otsu_binary_1.png" width=500>
 
 となり、分離度Xは次式で定義される。
 
-<img src="assets/otsu_binary_2.png" width=150>
+<img src="assets/otsu_binary_2.png" width=300>
 
 <!--
 ```bash
@@ -86,7 +104,7 @@ y = { 0 (if y < 128)
 
 となるので、
 
-<img src="assets/otsu_binary_3.png" width=150>
+<img src="assets/otsu_binary_3.png" width=300>
 
 <!--
 ```bash
