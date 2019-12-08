@@ -38,10 +38,10 @@ def affine(img, a, b, c, d, tx, ty):
 
 
 # Read image
-img = cv2.imread("imori.jpg").astype(np.float32)
+_img = cv2.imread("imori.jpg").astype(np.float32)
 
 # Affine
-out = affine(img, a=1, b=0, c=0, d=1, tx=30, ty=-30)
+out = affine(_img, a=1, b=0, c=0, d=1, tx=30, ty=-30)
 
 # Save result
 cv2.imshow("result", out)
