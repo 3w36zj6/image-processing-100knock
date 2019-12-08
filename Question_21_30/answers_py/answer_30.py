@@ -49,7 +49,7 @@ _img = cv2.imread("imori.jpg").astype(np.float32)
 A = 30.
 theta = - np.pi * A / 180.
 
-out = affine(img, a=np.cos(theta), b=-np.sin(theta), c=np.sin(theta), d=np.cos(theta),
+out = affine(_img, a=np.cos(theta), b=-np.sin(theta), c=np.sin(theta), d=np.cos(theta),
  tx=0, ty=0)
 
 
