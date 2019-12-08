@@ -21,7 +21,7 @@ def max_min_filter(img, K_size=3):
 		## Zero padding
 		pad = K_size // 2
 		out = np.zeros((H + pad * 2, W + pad * 2, 3), dtype=np.float)
-		out[pad: pad + H, pad: pad + W] = gray.copy().astype(np.float)
+		out[pad: pad + H, pad: pad + W] = img.copy().astype(np.float)
 		tmp = out.copy()
 
 		# filtering
@@ -38,7 +38,7 @@ def max_min_filter(img, K_size=3):
 		## Zero padding
 		pad = K_size // 2
 		out = np.zeros((H + pad * 2, W + pad * 2), dtype=np.float)
-		out[pad: pad + H, pad: pad + W] = gray.copy().astype(np.float)
+		out[pad: pad + H, pad: pad + W] = img.copy().astype(np.float)
 		tmp = out.copy()
 
 		# filtering
