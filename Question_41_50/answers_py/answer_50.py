@@ -207,8 +207,8 @@ def Canny(img):
 	return out
 
 
-# Morphology Dilate
-def Morphology_Dilate(img, Erode_time=1):
+# Morphology Erode
+def Morphology_Erode(img, Erode_time=1):
 	H, W = img.shape
 	out = img.copy()
 
@@ -229,8 +229,8 @@ def Morphology_Dilate(img, Erode_time=1):
 	return out
 
 
-# Morphology Erode
-def Morphology_Erode(img, Dil_time=1):
+# Morphology Dilate
+def Morphology_Dilate(img, Dil_time=1):
 	H, W = img.shape
 
 	# kernel
@@ -251,8 +251,9 @@ def Morphology_Erode(img, Dil_time=1):
 
 # Morphology Closing
 def Morphology_Closing(img, time=1):
-	out = Morphology_Erode(img, Dil_time=time)
-	out = Morphology_Dilate(out, Erode_time=time)
+	out = Morphology_Dilate(img, Dil_time=time)
+	#ut = Morphology_Erode(out, Erode_time=time)
+	
 	return out
 
 

@@ -44,8 +44,8 @@ def otsu_binarization(img, th=128):
 	return out
 
 
-# Morphology Dilate
-def Morphology_Dilate(img, Erode_time=1):
+# Morphology Erode
+def Morphology_Erode(img, Erode_time=1):
 	H, W = img.shape
 	out = img.copy()
 
@@ -66,8 +66,8 @@ def Morphology_Dilate(img, Erode_time=1):
 	return out
 
 
-# Morphology Erode
-def Morphology_Erode(img, Dil_time=1):
+# Morphology Dilate
+def Morphology_Dilate(img, Dilate_time=1):
 	H, W = img.shape
 
 	# kernel
@@ -77,7 +77,7 @@ def Morphology_Erode(img, Dil_time=1):
 
 	# each dilate time
 	out = img.copy()
-	for i in range(Dil_time):
+	for i in range(Dilate_time):
 		tmp = np.pad(out, (1, 1), 'edge')
 		for y in range(1, H+1):
 			for x in range(1, W+1):
@@ -89,8 +89,8 @@ def Morphology_Erode(img, Dil_time=1):
 
 # Opening morphology
 def Morphology_Opening(img, time=1):
-	out = Morphology_Dilate(img, Erode_time=time)
-	out = Morphology_Erode(out, Dil_time=time)
+	out = Morphology_Erode(img, Erode_time=time)
+	out = Morphology_Dilate(out, Dilate_time=time)
 	return out
 
 
