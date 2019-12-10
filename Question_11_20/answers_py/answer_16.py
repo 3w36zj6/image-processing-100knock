@@ -17,7 +17,10 @@ def BGR2GRAY(img):
 
 # prewitt filter
 def prewitt_filter(img, K_size=3):
-	H, W, C = img.shape
+	if len(img.shape) == 3:
+		H, W, C = img.shape
+	else:
+		H, W = img.shape
 
 	# Zero padding
 	pad = K_size // 2
@@ -47,6 +50,8 @@ def prewitt_filter(img, K_size=3):
 	out_h = out_h[pad: pad + H, pad: pad + W].astype(np.uint8)
 
 	return out_v, out_h
+
+
 
 # Read image
 img = cv2.imread("imori.jpg").astype(np.float)
