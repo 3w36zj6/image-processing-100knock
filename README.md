@@ -9,7 +9,7 @@
 > https://github.com/gzr2017/ImageProcessing100Wen
 
 ***自分の画像で画像処理をためすPoC***
->> [IMORI](https://yoyoyo-yo.github.io/yoyoyo.github.io/pages/sample_gasyori.html) 
+> [IMORI](https://yoyoyo-yo.github.io/yoyoyo.github.io/pages/sample_gasyori.html) 
 
 ## Description
 
