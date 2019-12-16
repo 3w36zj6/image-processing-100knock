@@ -1,14 +1,14 @@
 # 画像処理100本ノック!!
 
-***English is here*** (KuKuXia translates into English)
+***English is here*** (by KuKuXia)
 
 > https://github.com/KuKuXia/Image_Processing_100_Questions
 
-***Chinese is here***  (gzr2017, my ex-colleague, translates into Chinese)
+***Chinese is here***  (by gzr2017, my ex-colleague)
 
 > https://github.com/gzr2017/ImageProcessing100Wen
 
-*** 自分の画像で画像処理をためすPoC***
+***自分の画像で画像処理をためすPoC***
 >> [IMORI](https://yoyoyo-yo.github.io/yoyoyo.github.io/pages/sample_gasyori.html) 
 
 ## Description
