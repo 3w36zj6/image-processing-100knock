@@ -8,6 +8,9 @@
 
 > https://github.com/gzr2017/ImageProcessing100Wen
 
+*** 自分の画像で画像処理をためすPoC
+>> [IMORI](https://yoyoyo-yo.github.io/yoyoyo.github.io/pages/sample_gasyori.html) 
+
 ## Description
 
 画像処理の初学者のための問題１００問ですうう(´；ω；｀)
@@ -44,6 +47,7 @@ Twitterで更新を発信してますぅ
 
 https://twitter.com/curry_frog
 
+- 2019.12.16 自分の持ってる画像で画像処理をためすPoCを追加　[IMORI](https://yoyoyo-yo.github.io/yoyoyo.github.io/pages/sample_gasyori.html)　
 - 2019.11.22 [C++] Q.49~50 モルフォロジー処理（オープンイング、クロージング）を追加
 - 2019.11.21 [C++] Q.48 モルフォロジー処理（収縮）を追加
 - 2019.11.20 [C++] Q.47 モルフォロジー処理（膨張）を追加
