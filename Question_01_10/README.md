@@ -215,9 +215,11 @@ val = {  32  (  0 <= val <  64)
 <img src="assets/mean_pooling.png" width=150> <br>
 <img src="assets/mean_pooling_result.png" width=300>
 
+<!--
 ```bash
 v = 1/|R| * Sum_{i in R} v_i
 ```
+-->
 
 ここではimori.jpgは128x128なので、8x8にグリッド分割し、平均プーリングせよ。
 
