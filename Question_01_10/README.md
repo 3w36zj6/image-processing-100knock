@@ -210,7 +210,10 @@ val = {  32  (  0 <= val <  64)
 このようにグリッド分割し、その領域内の代表値を求める操作は**Pooling(プーリング)** と呼ばれる。
 これらプーリング操作は**CNN(Convolutional Neural Network)** において重要な役割を持つ。
 
-これは次式で定義される。
+これは次式で定義される。ここでいうRはプーリングを行う領域である。つまり、3x3の領域でプーリングを行う。|R|=3x3=9となる。
+
+<img src="assets/mean_pooling.png" width=150> <br>
+<img src="assets/mean_pooling_result.png" width=300>
 
 ```bash
 v = 1/|R| * Sum_{i in R} v_i
