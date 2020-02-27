@@ -16,15 +16,21 @@
 
 ## Q.12. モーションフィルタ
 
+- motion filter
+
 モーションフィルタ(3x3)を実装せよ。
 
 モーションフィルタとは対角方向の平均値を取るフィルタであり、次式で定義される。
 
+<img src="assets/motion_filter.png" width=100>
+
+<!--
 ```bash
   1/3  0   0
 [  0  1/3  0 ]
    0   0  1/3
 ```
+-->
 
 |入力 (imori.jpg)|出力 (answers_image/answer_12.jpg)|
 |:---:|:---:|
@@ -52,16 +58,34 @@ MAX-MINフィルタとはフィルタ内の画素の最大値と最小値の差�
 
 ## Q.14. 微分フィルタ
 
+- differential filter
+
 微分フィルタ(3x3)を実装せよ。
 
 微分フィルタは輝度の急激な変化が起こっている部分のエッジを取り出すフィルタであり、隣り合う画素同士の差を取る。
 
+画像でエッジになるのは輝度変化が激しい部分である。赤部分は殆ど色が変化しないが、青枠は色の変化が激しい。この変化がエッジとなる。
+
+<img src="assets/differential_filter_theory1.png" width=300>
+
+この色の変化量は微分で表される。v(x, y)は画像の(x, y)の位置の輝度にあたる。
+
+<img src="assets/differential_filter_theory2.png" width=300>
+
+つまり隣合うピクセルの差分がピクセルの微分値になる。これを縦方向、横方向で表すと次のフィルタを適用するのと同じになる。
+
+| 縦方向| 横方向|
+|:---:|:---:|
+| <img src="assets/differential_filter_v.png" width=100> | <img src="assets/differential_filter_h.png" width=100> |
+
+<!--
 ```bash
     (a)縦方向         (b)横方向
       0 -1  0            0 0 0
 K = [ 0  1  0 ]   K = [ -1 1 0 ]
       0  0  0            0 0 0
 ```
+-->
 
 |入力 (imori.jpg)|出力・縦方向 (answers_image/answer_14_v.jpg)|出力・横方向 (answers_image/answer_14_h.jpg)|
 |:---:|:---:|:---:|
