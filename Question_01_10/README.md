@@ -107,11 +107,11 @@ plt.show()
 
 画像全体の画素の分散はクラス内分散とクラス間分散の和となる。
 
-<img src="assets/otsu_binary_sigma_t.png" width=150>
+<img src="assets/otsu_binary_sigma_t.png" width=120>
 
 よって分離度Xは次式で定義される。
 
-<img src="assets/otsu_binary_x2.png" width=200>
+<img src="assets/otsu_binary_x2.png" width=150>
 
 この分離度が最大となれば良くて、つまりクラス間分散が最大になれば良い。
 
