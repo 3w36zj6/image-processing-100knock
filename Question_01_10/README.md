@@ -101,18 +101,23 @@ plt.show()
 
 <img src="assets/otsu_binary_sigma_b.png" width=300>
 
-画像全体の画素の分散はクラス内分散とクラス間分散の和となる。
-
-<img src="assets/otsu_binary_sigma_t.png" width=200>
-
 分離の度合いは**クラス内分散が小さく、かつクラス間分散が大きく**なるように定義される。（クラス分類と同様の考え方）
 
 <img src="assets/otsu_binary_x.png" width=80>
 
+画像全体の画素の分散はクラス内分散とクラス間分散の和となる。
 
-となり、分離度Xは次式で定義される。
+<img src="assets/otsu_binary_sigma_t.png" width=200>
 
-<img src="assets/otsu_binary_2.png" width=250>
+よって分離度Xは次式で定義される。
+
+<img src="assets/otsu_binary_x2.png" width=200>
+
+この分離度が最大となれば良くて、つまりクラス間分散が最大になれば良い。
+
+<img src="assets/otsu_binary_argmax.png" width=200>
+
+つまり、閾値を[0, 255]の各値でクラス間分散を計算し、最大になる閾値が最適な閾値である。
 
 <!--
 ```bash
@@ -124,18 +129,11 @@ plt.show()
 ```
 -->
 
-となるので、
-
-<img src="assets/otsu_binary_3.png" width=200>
-
 <!--
 ```bash
 argmax_{t} X = argmax_{t} Sb^2
 ```
 -->
-
-
-となる。すなわち、Sb^2 =  w0 * w1 * (M0 - M1) ^2 が最大となる、閾値tを二値化の閾値とすれば良い。
 
 |入力 (imori.jpg)|出力 (th = 127) (answers_image/answer_4.jpg)|
 |:---:|:---:|
