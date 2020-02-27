@@ -73,24 +73,46 @@ plt.ylabel('appearance')
 plt.show()
 ```
 
-<img src="assets/histogram-Gray.jpg" width=400>
+<img src="assets/histogram-Gray.jpg" width=300>
 
-二値化はある値を境界にして、０か１にする方法だけど、
+二値化はある値を境界にして、０か１にする方法だけど、大津の二値化は閾値を自動的に決定する方法である。ここでは閾値によって分離される画素をそれぞれクラス0,1とする。
 
-- 閾値t未満をクラス0, t以上をクラス1とする。
-- w0, w1 ... 閾値tにより分離された各クラスの画素数の割合 (w0 + w1 = 1を満たす)
-- S0^2, S1^2 ... 各クラスの画素値の分散
-- M0, M1 ... 各クラスの画素値の平均値
+<img src="assets/histogram-Gray-1.png" width=300>
 
-<img src="assets/histogram-Gray-1.png" width=400>
+ある閾値tによって、クラス0と1が上手く分離できれば良い二値化と言える。ということで、クラス0と1の分離度を定義する。
+
+<img src="assets/otsu_binary_omega.png" width=45> ... クラス0, 1に属する画素数
+
+<img src="assets/otsu_binary_sigma.png" width=45> ... クラス0, 1に属する画素値の分散
+
+<img src="assets/otsu_binary_M.png" width=45> ... クラス0, 1に属する画素値の平均値
+
+<img src="assets/otsu_binary_Mt.png" width=20> ... 画像全体の画素値の平均値
+
+<img src="assets/otsu_binary_p.png" width=45> ... クラス0, 1に属する画素値の合計値
 
 とすると、
 
-<img src="assets/otsu_binary_1.png" width=500>
+クラス0,1の分散の重み付き和を示す**クラス内分散**は次式となる。
+
+<img src="assets/otsu_binary_sigma_w.png" width=150>
+
+クラス0,1の平均値が画像全体の平均からどれだけ離れているかを示す**クラス間分散**は次式となる。
+
+<img src="assets/otsu_binary_sigma_b.png" width=300>
+
+画像全体の画素の分散はクラス内分散とクラス間分散の和となる。
+
+<img src="assets/otsu_binary_sigma_t.png" width=200>
+
+分離の度合いは**クラス内分散が小さく、かつクラス間分散が大きく**なるように定義される。（クラス分類と同様の考え方）
+
+<img src="assets/otsu_binary_x.png" width=80>
+
 
 となり、分離度Xは次式で定義される。
 
-<img src="assets/otsu_binary_2.png" width=300>
+<img src="assets/otsu_binary_2.png" width=250>
 
 <!--
 ```bash
@@ -104,7 +126,7 @@ plt.show()
 
 となるので、
 
-<img src="assets/otsu_binary_3.png" width=300>
+<img src="assets/otsu_binary_3.png" width=200>
 
 <!--
 ```bash
