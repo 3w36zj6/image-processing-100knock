@@ -99,7 +99,7 @@ plt.show()
 
 クラス0,1の平均値が画像全体の平均からどれだけ離れているかを示す**クラス間分散**は次式となる。
 
-<img src="assets/otsu_binary_sigma_b.png" width=300>
+<img src="assets/otsu_binary_sigma_b.png" width=400>
 
 分離の度合いは**クラス内分散が小さく、かつクラス間分散が大きく**なるように定義される。（クラス分類と同様の考え方）
 
@@ -107,7 +107,7 @@ plt.show()
 
 画像全体の画素の分散はクラス内分散とクラス間分散の和となる。
 
-<img src="assets/otsu_binary_sigma_t.png" width=200>
+<img src="assets/otsu_binary_sigma_t.png" width=150>
 
 よって分離度Xは次式で定義される。
 
