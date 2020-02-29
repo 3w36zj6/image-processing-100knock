@@ -25,8 +25,8 @@ cv::Mat BGR2GRAY(cv::Mat img){
   return out;
 }
 
-// prewitt filter
-cv::Mat prewitt_filter(cv::Mat img, int kernel_size, bool horizontal){
+// Sobel filter
+cv::Mat sobel_filter(cv::Mat img, int kernel_size, bool horizontal){
   int height = img.rows;
   int width = img.cols;
   int channel = img.channels();
@@ -35,15 +35,13 @@ cv::Mat prewitt_filter(cv::Mat img, int kernel_size, bool horizontal){
   cv::Mat out = cv::Mat::zeros(height, width, CV_8UC1);
 
   // prepare kernel
-  double kernel[kernel_size][kernel_size] = {{-1, -1, -1}, {0, 0, 0}, {1, 1, 1}};
+  double kernel[kernel_size][kernel_size] = {{1, 2, 1}, {0, 0, 0}, {-1, -2, -1}};
 
   if (horizontal){
     kernel[0][1] = 0;
-    kernel[0][2] = 1;
-    kernel[1][0] = -1;
-    kernel[1][2] = 1;
-    kernel[2][0] = -1;
     kernel[2][1] = 0;
+    kernel[1][0] = 2;
+    kernel[1][2] = -2;
   }
 
   int pad = floor(kernel_size / 2);
@@ -76,11 +74,11 @@ int main(int argc, const char* argv[]){
   // BGR -> Gray
   cv::Mat gray = BGR2GRAY(img);
 
-  // prewitt filter (vertical)
-  cv::Mat out_v = prewitt_filter(gray, 3, false);
+  // sobel filter (vertical)
+  cv::Mat out_v = sobel_filter(gray, 3, false);
 
-  // prewitt filter (horizontal)
-  cv::Mat out_h = prewitt_filter(gray, 3, true);
+  // sobel filter (horizontal)
+  cv::Mat out_h = sobel_filter(gray, 3, true);
   
   //cv::imwrite("out.jpg", out);
   cv::imshow("answer (vertical)", out_v);

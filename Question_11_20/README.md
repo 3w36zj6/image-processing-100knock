@@ -22,7 +22,7 @@
 
 モーションフィルタとは対角方向の平均値を取るフィルタであり、次式で定義される。
 
-<img src="assets/motion_filter.png" width=100>
+<img src="assets/motion_filter_kernel.png" width=130>
 
 <!--
 ```bash
@@ -68,7 +68,7 @@ MAX-MINフィルタとはフィルタ内の画素の最大値と最小値の差�
 
 <img src="assets/differential_filter_theory1.png" width=300>
 
-この色の変化量は微分で表される。v(x, y)は画像の(x, y)の位置の輝度にあたる。
+この色の変化量は微分で表される。I(x, y)は画像の(x, y)の位置の輝度にあたる。
 
 <img src="assets/differential_filter_theory2.png" width=400>
 
@@ -95,48 +95,62 @@ K = [ 0  1  0 ]   K = [ -1 1 0 ]
 - Python >>[ answers_py/answer_14.py](answers_py/answer_14.py)
 - C++ >> [answers_cpp/answer_14.cpp](answers_cpp/answer_14.cpp)
 
-## Q.15. Sobelフィルタ
-
-Sobelフィルタ(3x3)を実装せよ。
-
-ソーベルフィルタ(Sobelフィルタ)は特定方向（縦や横）のエッジのみを抽出するフィルタであり、次式でそれぞれ定義される。
-
-```bash
-    (a)縦方向       (b)横方向
-       1  2  1           1  0 -1
-K = [  0  0  0 ]   K = [ 2  0 -2 ]
-      -1 -2 -1           1  0 -1
-```
-
-|入力 (imori.jpg)|出力・縦方向 (answers_image/answer_15_v.jpg)|出力・横方向 (answers_image/answer_15_h.jpg)|
-|:---:|:---:|:---:|
-|![](imori.jpg)|![](answers_image/answer_15_v.jpg)|![](answers_image/answer_15_h.jpg)|
-
-答え
-- Python >> [answers_py/answer_15.py](answers_py/answer_15.py)
-- C++ >> [answers_cpp/answer_15.cpp](answers_cpp/answer_15.cpp)
-
-
-## Q.16. Prewittフィルタ
+## Q.15. Prewittフィルタ
 
 Prewittフィルタ(3x3)を実装せよ。
 
-Prewittフィルタはエッジ抽出フィルタの一種であり、次式で定義される。
+Prewitt(プレウィット)フィルタはエッジ抽出フィルタの一種であり、次式で定義される。
+これは微分フィルタを3x3に拡大したものである。
 
+| 縦方向| 横方向|
+|:---:|:---:|
+| <img src="assets/prewitt_filter_v.png" width=130> | <img src="assets/prewitt_filter_h.png" width=100> |
+
+<!--
 ```bash
     (a)縦方向          (b)横方向
       -1 -1 -1          -1 0 1
 K = [  0  0  0 ]  K = [ -1 0 1 ]
        1  1  1          -1 0 1
 ```
+-->
 
 |入力 (imori.jpg)|出力・縦方向 (answers_image/answer_16_v.jpg)|出力・横方向 (answers_image/answer_16_h.jpg)|
 |:---:|:---:|:---:|
 |![](imori.jpg)|![](answers_image/answer_16_v.jpg)|![](answers_image/answer_16_h.jpg)|
 
 答え
+- Python >> [answers_py/answer_15.py](answers_py/answer_15.py)
+- C++ >> [answers_cpp/answer_15.cpp](answers_cpp/answer_15.cpp)
+
+## Q.16. Sobelフィルタ
+
+Sobelフィルタ(3x3)を実装せよ。
+
+Sobel(ソーベル)フィルタもエッジを抽出するフィルタであり、次式でそれぞれ定義される。
+これはprewittフィルタの中心部分に重みをつけたフィルタである。
+
+| 縦方向| 横方向|
+|:---:|:---:|
+| <img src="assets/sobel_filter_v.png" width=140> | <img src="assets/sobel_filter_h.png" width=100> |
+
+<!--
+```bash
+    (a)縦方向       (b)横方向
+       1  2  1           1  0 -1
+K = [  0  0  0 ]   K = [ 2  0 -2 ]
+      -1 -2 -1           1  0 -1
+```
+-->
+
+|入力 (imori.jpg)|出力・縦方向 (answers_image/answer_15_v.jpg)|出力・横方向 (answers_image/answer_15_h.jpg)|
+|:---:|:---:|:---:|
+|![](imori.jpg)|![](answers_image/answer_15_v.jpg)|![](answers_image/answer_15_h.jpg)|
+
+答え
 - Python >> [answers_py/answer_16.py](answers_py/answer_16.py)
 - C++ >> [answers_cpp/answer_16.cpp](answers_cpp/answer_16.cpp)
+
 
 ## Q.17. Laplacianフィルタ
 
@@ -144,36 +158,56 @@ Laplacianフィルタを実装せよ。
 
 Laplacian（ラプラシアン）フィルタとは輝度の二次微分をとることでエッジ検出を行うフィルタである。
 
-デジタル画像は離散データであるので、x方向・y方向の一次微分は、それぞれ次式で表される。
+デジタル画像は離散データであるので、x方向・y方向の一次微分は、それぞれ次式で表される。（微分フィルタと同じ）
 
+<img src="assets/laplacian_filter_ix.png" width=300>
+
+<img src="assets/laplacian_filter_iy.png" width=300>
+
+<!--
 ```bash
 Ix(x,y) = (I(x+1, y) - I(x,y)) / ((x+1)-x) = I(x+1, y) - I(x,y)
 Iy(x,y) = (I(x, y+1) - I(x,y)) / ((y+1)-y) = I(x, y+1) - I(x,y)
 ```
+-->
 
 さらに二次微分は、次式で表される。
 
+<img src="assets/laplacian_filter_ixx.png" width=400>
+
+<img src="assets/laplacian_filter_iyy.png" width=300>
+
+<!--
 ```bash
 Ixx(x,y) = (Ix(x,y) - Ix(x-1,y)) / ((x+1)-x) = Ix(x,y) - Ix(x-1,y)
          = (I(x+1, y) - I(x,y)) - (I(x, y) - I(x-1,y))
          = I(x+1,y) - 2 * I(x,y) + I(x-1,y)
 Iyy(x,y) = ... = I(x,y+1) - 2 * I(x,y) + I(x,y-1)
 ```
+-->
 
-これらより、ラプラシアン は次式で定義される。
+これらより、ラプラシアンはx,yの両方の偏微分の和となり、次式で定義される。
 
+<img src="assets/laplacian_filter_d2i.png" width=500>
+
+<!--
 ```bash
 D^2 I(x,y) = Ixx(x,y) + Iyy(x,y)
            = I(x-1,y) + I(x,y-1) - 4 * I(x,y) + I(x+1,y) + I(x,y+1)
 ```
+-->
 
-これをカーネル化すると、次のようになる。
+これをカーネルで表すと、次のようになる。
 
+<img src="assets/laplacian_filter_kernel.png" width=130>
+
+<!--
 ```bash
       0  1  0
 K = [ 1 -4  1 ]
       0  1  0
 ```
+-->
 
 |入力 (imori.jpg)|出力(answers_image/answer_17.jpg)|
 |:---:|:---:|
@@ -189,11 +223,15 @@ Embossフィルタを実装せよ。
 
 Embossフィルタとは輪郭部分を浮き出しにするフィルタで、次式で定義される。
 
+<img src="assets/emboss_filter_kernel.png" width=130>
+
+<!--
 ```bash
       -2 -1  0
 K = [ -1  1  1 ]
        0  1  2
 ```
+-->
 
 |入力 (imori.jpg)|出力(answers_image/answer_18.jpg)|
 |:---:|:---:|
@@ -209,13 +247,15 @@ LoGフィルタ(sigma=3、カーネルサイズ=5)を実装し、*imori_noise.jp
 
 LoGフィルタとはLaplacian of Gaussianであり、ガウシアンフィルタで画像を平滑化した後にラプラシアンフィルタで輪郭を取り出すフィルタである。
 
-Laplcianフィルタは二次微分をとるのでノイズが強調されるのを防ぐために、予めGaussianフィルタでノイズを抑える。
+Laplcianフィルタは二次微分をとるのでノイズが強調されるのを防ぐために、予めGaussianフィルタでノイズを抑える。LoGフィルタは次式で定義される。
 
-LoGフィルタは次式で定義される。
+<img src="assets/log_filter_kernel.png" width=300>
 
+<!--
 ```bash
 LoG(x,y) = (x^2 + y^2 - sigma^2) / (2 * pi * sigma^6) * exp(-(x^2+y^2) / (2*sigma^2))
 ```
+-->
 
 |入力 (imori_noise.jpg)|出力 (answers_image/answer_19.jpg) |
 |:---:|:---:|
