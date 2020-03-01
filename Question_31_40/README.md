@@ -17,6 +17,11 @@
 それぞれ次式のアフィン変換で実現できる。
 ただし、元画像のサイズがh x wとする。
 
+|(1) X-share| (2) Y-share|
+|:---:|:---:|
+| <img src="assets/affine_skew_xshare.png" width=200> | <img src="assets/affine_skew_yshare.png" width=200> |
+
+<!--
 ```bash
 (1) X-sharing                  (2) Y-sharing
    a = dx / h                     a = dy / w
@@ -25,6 +30,7 @@
 [ y' ] = [ 0 1 ty ][ y ]       [ y' ] = [ a 1 ty ][ y ]
   1        0 0  1    1           1        0 0  1    1
 ```
+-->
 
 |入力 (imori.jpg)|出力 (1) (answers_image/answer_31_1.jpg)|出力 (2) (answers_image/answer_31_2.jpg)|出力 (3) (answers_image/answer_31_3.jpg)|
 |:---:|:---:|:---:|:---:|
@@ -77,7 +83,7 @@ x = [0, W-1], y = [0, H-1] として
 
 上が定義式ですがexp(j)は複素数の値をとってしまうので、実際にコードにするときはぜ下式のように絶対値を使います。
 
-<img src="assets/idft_equ2.png" width="500" >
+<img src="assets/idft_equ2.png" width="500">
 
 シンプルに全部for文で回すと128^4の計算になるので、時間がかかってしまいます。numpyをうまく活用すれば計算コストを減らすことができます。（解答は128^2まで減らしました。）
 
