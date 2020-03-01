@@ -193,13 +193,16 @@ f(x,y) = 2 / T * C(x)C(y) * Sum_{u=0:K-1} Sum_{v=0:K-1} F(u,v) cos((2x+1)u*pi/2T
 IDCTで用いるDCT係数を8でなく、4にすると画像の劣化が生じる。
 入力画像とIDCT画像のPSNRを求めよ。また、IDCTによるビットレートを求めよ。
 
-PSNR(Peak Signal to Noise Ratio)とは信号対雑音比と呼ばれ、画像がどれだけ劣化したかを示す。
+**PSNR(Peak Signal to Noise Ratio)**とは信号対雑音比と呼ばれ、画像がどれだけ劣化したかを示す。
 
 PSNRが大きいほど、画像が劣化していないことを示し、次式で定義される。
-MAXは取りうる値の最大値で[0,255]の表示なら MAX=255　となる。
-また、MSEはMean Squared Error(平均二乗誤差)と呼ばれ、二つの画像の差分の二乗の平均値を示す。
+v_maxは取りうる値の最大値で[0,255]の表示なら v_max=255　となる。
 
-<img src="assets/psnr_mse_equ.png" width="500">
+<img src="assets/psnr.png" width="200">
+
+式中の**MSE**は**Mean Squared Error(平均二乗誤差)**と呼ばれ、二つの画像の差分の二乗の平均値を示す。
+
+<img src="assets/mse.png" width="350">
 
 <!--
 ```bash
@@ -210,9 +213,13 @@ MSE = Sum_{y=0:H-1} Sum_{x=0:W-1} (I1(x,y) - I2(x,y))^2 / (HW)
 
 ビットレートとは8x8でDCTを行い、IDCTでKxKの係数までを用いた時に次式で定義される。
 
+<img src="assets/bitrate.png" width="130">
+
+<!--
 ```bash
 bitrate = 8 * K^2 / 8^2
 ```
+-->
 
 |入力 (imori.jpg)|出力 (answers_image/answer_37.jpg) (PSNR = 27.62, Bitrate=2.0)|
 |:---:|:---:|
