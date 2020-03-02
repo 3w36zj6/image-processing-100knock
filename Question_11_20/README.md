@@ -249,6 +249,20 @@ LoGフィルタとはLaplacian of Gaussianであり、ガウシアンフィル�
 
 Laplcianフィルタは二次微分をとるのでノイズが強調されるのを防ぐために、予めGaussianフィルタでノイズを抑える。LoGフィルタは次式で定義される。
 
+ラプラシアンを∇^2、ガウシアンフィルタをG、画像をIとする。次式によって、ガウシアンフィルタリング後にラプラシアンフィルタする操作を、ガウシアンフィルタをラプラシアンしたものでフィルタリングする操作に置き換えることが可能。
+
+<img src="assets/log_filter_1.png" width=200>
+
+ラプラシアンフィルタの中身はxとyに関する２時微分の和で表される。ガウシアンフィルタをxに関して１時微分したものは、次式。
+
+<img src="assets/log_filter_dxG.png" width=400>
+
+２時微分は次式。
+
+<img src="assets/log_filter_dx2G.png" width=280>
+
+yに関してはxの部分を入れ替えるだけでいいので、LoGフィルタは次式となる。
+
 <img src="assets/log_filter_kernel.png" width=300>
 
 <!--

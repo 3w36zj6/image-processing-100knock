@@ -32,9 +32,18 @@ def LoG_filter(img, K_size=5, sigma=3):
 	K = np.zeros((K_size, K_size), dtype=np.float)
 	for x in range(-pad, -pad + K_size):
 		for y in range(-pad, -pad + K_size):
-			K[y + pad, x + pad] = (x ** 2 + y ** 2 - sigma ** 2) * np.exp( -(x ** 2 + y ** 2) / (2 * (sigma ** 2)))
+			K[y + pad, x + pad] = (x ** 2 + y ** 2 - 2 * (sigma ** 2)) * np.exp( - (x ** 2 + y ** 2) / (2 * (sigma ** 2)))
 	K /= (2 * np.pi * (sigma ** 6))
 	K /= K.sum()
+
+	"""
+	K = np.array([[0, 0, 1, 0, 0],
+								[0, 1, 2, 1, 0],
+								[1, 2, -16, 2, 1],
+								[0, 1, 2, 1, 0],
+								[0, 0, 1, 0, 0]])
+	"""
+	print(K)
 
 	# filtering
 	for y in range(H):
@@ -54,7 +63,7 @@ img = cv2.imread("imori_noise.jpg")
 gray = BGR2GRAY(img)
 
 # LoG filtering
-out = LoG_filter(gray, K_size=5, sigma=3)
+out = LoG_filter(gray, K_size=5, sigma=1)
 
 # Save result
 cv2.imwrite("out.jpg", out)
