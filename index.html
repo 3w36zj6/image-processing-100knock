@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="page_assets/style_content.css">
     <!-- css : button -->
     <link rel="stylesheet" href="page_assets/style_btn.css">
+    <!-- css : list -->
+    <link rel="stylesheet" href="page_assets/style_list.css">
 
 
     <!-- Bootstrap CSS -->
@@ -37,14 +39,14 @@
             <a class="header-text" href="#">TOP</a>
         </div>
         <div class="header-menu-item col-xs-6 col-sm-3 col-md-3">
-            <a class="header-text" href="#link">I see Update:)</a>
+            <a class="header-text" href="#link">I see Update :)</a>
         </div>
         <div class="header-menu-item col-xs-6 col-sm-3 col-md-3">
             <a class="header-text" href="#content">Go to Contents!
             </a>
         </div>
         <div class="header-menu-item col-xs-6 col-sm-3 col-md-3">
-            <a class="header-text" href="#game">Citation &amp; License</a>
+            <a class="header-text" href="#citation">Citation &amp; License</a>
         </div>
       </div>
     </div>
@@ -61,9 +63,12 @@
       <br>
       これはイモリと一緒に画像処理の基本的処理の知識を身に着け、アルゴリズムを理解するための100本ノックです。ここに載っている問題はOpenCVでAPIが用意されているものが殆どですが、**あえてそれを自分の手で実装**してください。解答も載っけてますが、それはあくまで解答です。自分で考えながら実装して下さい。
       <br>
-      問題の難易度の順番はめちゃくちゃです。なるべくポピュラーなものを採用していますが、ネタ切れであんまり聞かないものもあります笑
-      内容はいろいろな文献を調べて載っけてるので正しくないものもあるかもしれないので注意して下さい** まちがいがあったらプルリクもらえるととても助かります！！
-      【注意】このページを利用して、または関して生じた事に関しては、私は一切責任を負いません。すべて**自己責任**でお願い致します。
+
+      <ul class="checklist">
+        <li>問題の難易度の順番はめちゃくちゃです。なるべくポピュラーなものを採用していますが、ネタ切れであんまり聞かないものもあります笑</li>
+        <li>内容に不備あったらプルリクもらえるととても助かります！！</li>
+        <li>【注意】このページを利用して、または関して生じた事に関しては、私は一切責任を負いません。すべて**自己責任**でお願い致します。</li>
+      </ul>
       <br>
       PythonとC++の好きな方でやってみてね♡（最近Javascriptも追加してるよ）
       <br>
@@ -73,77 +78,147 @@
     </div>
     <div class="content-sentence">
 
-        <div class="content-title-20"><font class="content-title-font">Adv</font></div>
-        <br><br>
+      <div class="content-title-20"><font class="content-title-font">Adv</font></div>
+      <br><br>
 
-        <!--
+      <!--
 
-        <div class="content-title-20"><font class="content-title-font">English ver(by KuKuXia)</font></div>
-          <a href='https://github.com/KuKuXia/Image_Processing_100_Questions'>https://github.com/KuKuXia/Image_Processing_100_Questions</a>
+      <div class="content-title-20"><font class="content-title-font">English ver(by KuKuXia)</font></div>
+        <a href='https://github.com/KuKuXia/Image_Processing_100_Questions'>https://github.com/KuKuXia/Image_Processing_100_Questions</a>
 
-        <div class="content-title-20"><font class="content-title-font">Chinese ver(by gzr2017</font></div>
-          <a href='https://github.com/gzr2017/ImageProcessing100Wen'>https://github.com/gzr2017/ImageProcessing100Wen</a>
+      <div class="content-title-20"><font class="content-title-font">Chinese ver(by gzr2017</font></div>
+        <a href='https://github.com/gzr2017/ImageProcessing100Wen'>https://github.com/gzr2017/ImageProcessing100Wen</a>
 
-        <div class="content-title-20"><font class="content-title-font">IMORI : 自分の画像で画像処理をためすPoC</font></div>
-          <a href='https://yoyoyo-yo.github.io/IMORI/'>https://yoyoyo-yo.github.io/IMORI/</a>
+      <div class="content-title-20"><font class="content-title-font">IMORI : 自分の画像で画像処理をためすPoC</font></div>
+        <a href='https://yoyoyo-yo.github.io/IMORI/'>https://yoyoyo-yo.github.io/IMORI/</a>
 
-        <div class="content-title-20"><font class="content-title-font">ディープラーニングのノックはこっち（ほぼTips集化してる）</font></div>
-          <a href='https://github.com/yoyoyo-yo/DeepLearningMugenKnock'>https://github.com/yoyoyo-yo/DeepLearningMugenKnock</a>
-        -->
+      <div class="content-title-20"><font class="content-title-font">ディープラーニングのノックはこっち（ほぼTips集化してる）</font></div>
+        <a href='https://github.com/yoyoyo-yo/DeepLearningMugenKnock'>https://github.com/yoyoyo-yo/DeepLearningMugenKnock</a>
+      -->
 
-        <div class="container-fluid">
-          <div class="btn-div col-xs-2 col-sm-2 col-md-2">
-            <button onclick="location.href='http://kentei.ai/'" class="content-btn">StudyAI</button>
-            <br>
-            Study-AI株式会社様
-            のAI実装検定のシラバスに使用していただくことになりました！
-          </div>
-
-        <div class="container-fluid">
-          <div class="btn-div col-xs-2 col-sm-2 col-md-2">
-            <button onclick="location.href='https://github.com/KuKuXia/Image_Processing_100_Questions'" class="content-btn">English</button>
-            <br>
-            English ver by KuKuXia
-          </div>
-
-          <div class="btn-div col-xs-2 col-sm-2 col-md-2">
-            <button onclick="location.href='https://github.com/gzr2017/ImageProcessing100Wen'" class="content-btn">Chinese</button>
-            <br>
-            Chinese ver by gzr2017
-          </div>
-
-          <div class="btn-div col-xs-2 col-sm-2 col-md-2">
-            <button onclick="location.href='https://yoyoyo-yo.github.io/IMORI/'" class="content-btn">IMORI</button>
-            <br>
-            IMORI : 自分の画像で画像処理をためせるSaaS
-          </div>
-
-          <div class="btn-div col-xs-2 col-sm-2 col-md-2">
-            <button onclick="location.href='https://github.com/gzr2017/ImageProcessing100Wen'" class="content-btn">DLKnock</button>
-            <br>
-            ディープラーニングのノック（ほぼTips集化してる）
-          </div>
-
+      <div class="container-fluid">
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2">
+          <button onclick="location.href='http://kentei.ai/'" class="content-btn">StudyAI</button>
+          <br>
+          Study-AI株式会社様
+          のAI実装検定のシラバスに使用していただくことになりました！
         </div>
-        
+
+      <div class="container-fluid">
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2">
+          <button onclick="location.href='https://github.com/KuKuXia/Image_Processing_100_Questions'" class="content-btn">English</button>
+          <br>
+          English ver by KuKuXia
+        </div>
+
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2">
+          <button onclick="location.href='https://github.com/gzr2017/ImageProcessing100Wen'" class="content-btn">Chinese</button>
+          <br>
+          Chinese ver by gzr2017
+        </div>
+
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2">
+          <button onclick="location.href='https://yoyoyo-yo.github.io/IMORI/'" class="content-btn">IMORI</button>
+          <br>
+          IMORI : 自分の画像で画像処理をためせるSaaS
+        </div>
+
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2">
+          <button onclick="location.href='https://github.com/gzr2017/ImageProcessing100Wen'" class="content-btn">DLKnock</button>
+          <br>
+          ディープラーニングのノック（ほぼTips集化してる）
+        </div>
+
+        <div class="btn-div col-xs-12 col-sm-12 col-md-2"></div>
+
       </div>
+      
+    </div>
 
-      <br><br><br><br><br><br><br><br><br><br><br>
+    <br>
+    <div style="float: clear; height: 200px; width:100%"></div>
 
+    <br>
 
-    <div class="content-title-20"><font class="content-title-font" id='content'>Content</font></div>
+    <div class="content-title-30"><font class="content-title-font" id='content'>Content</font></div>
+
+    <div style="height: 50px"></div>
+
+    <div class="content-title-20"><font class="content-title-font">Tutorial</font></div>
     <div class="content-sentence">
       使いたい言語を選んでください。画像の読み込みや、画素の扱い方がありまぁす
     </div>
     <div class="container-fluid">
-      <div class="btn-div col-xs-4 col-sm-4 col-md-4">
-        <button onclick="location.href='http://kentei.ai/'" class="content-btn">Python</button>
+      <div class="content-div col-xs-4 col-sm-4 col-md-4">
+        <button onclick="location.href='http://kentei.ai/'" class="content-btn">Off course Python!</button>
         <br>
+        <div class="content-box-ul nonhead-list">
+          <ul>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 1. インストール</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 2. 画像読む &amp; 表示</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 3. 画素をいじる</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 4. 画像のコピー</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 5. 画像の保存</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 6. 練習問題</p></div></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="content-div col-xs-4 col-sm-4 col-md-4">
+        <button onclick="location.href='http://kentei.ai/'" class="content-btn">I'm C++!</button>
+        <br>
+        <div class="content-box-ul nonhead-list">
+          <ul>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 1. インストール</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 2. 画像読む &amp; 表示</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 3. 画素をいじる</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 4. 画像のコピー</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 5. 画像の保存</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 6. 練習問題</p></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-div col-xs-4 col-sm-4 col-md-4">
+        <button onclick="location.href='http://kentei.ai/'" class="content-btn">JavaScript is justice!</button>
+        <br>
+        <div class="content-box-ul nonhead-list">
+          <ul>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 1. インストール</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 2. 画像読む &amp; 表示</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 3. 画素をいじる</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 4. 画像のコピー</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 5. 画像の保存</p></div></li>
+            <li><div class="content-index" href="#" onclick="location.href=''"><p>&#10004; 6. 練習問題</p></div></li>
+          </ul>
+        </div>
+      </div>
+      
 
   </div>
 
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <div style="height: 600px"></div>
+
+  <br>
+
+  <div class="content-title-30"><font class="content-title-font" id='citation'>Citation</font></div>
+
+  <div class="content-sentence" style="text-align: left;">
+    @article{yoyoyo-yoGasyori100knock,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Author = {yoyoyo-yo},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Title = {Gasyori100knock},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Journal = {https://github.com/yoyoyo-yo/Gasyori100knock},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Year = {2019}<br>
+  }
+  </div>
+
+  <div class="content-title-30"><font class="content-title-font" id='license'>License</font></div>
+
+  <div class="content-sentence">
+    &copy; yoyoyo-yo All Rights Reserved.<br>
+    This is under MIT License.<br>
+    <a href="https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/LICENSE">https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/LICENSE</a>
+  </div>
 
   </body>
 </html>

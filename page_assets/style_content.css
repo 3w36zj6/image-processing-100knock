@@ -7,15 +7,12 @@ cotent title
   /*width:100%-240px;
   margin: 30px 120px 0px 120px;*/
   margin: 0;
-  padding: 100px 0 0 5%;
   background-color: white;
   font-size: 30px;
 }
 
 .content-title-20{
   text-align: center;
-  /*width:100%-240px;
-  margin: 30px 120px 0px 120px;*/
   margin: 0;
   padding: 5px 0 0 0;
   background-color: white;
@@ -35,4 +32,38 @@ cotent title
   padding: 2% 5%;
   background-color: white;
   font-size: 15px;
+}
+
+.content-div{
+  float: left;
+  text-align: center;
+  height: 350px;
+}
+
+.content-box-ul{
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
+  
+}
+
+.content-index{
+  width: 100%;
+  transition: .4s;
+  height: 30px;
+  line-height: 30px;
+}
+
+.content-index:hover{
+  cursor: pointer;
+  box-shadow: 6px 6px 10px gray;
+  text-decoration: underline solid 1px red;
+}
+
+.content-index > p{
+  transition: .5s;
+}
+
+.content-index > p:hover{
+
 }

@@ -16,11 +16,3 @@ body div{
 body {
   text-align: center;
 }
-
-.content {
-  width: 80%;
-}
-
-.clear-float {
-  clear: left;
-}

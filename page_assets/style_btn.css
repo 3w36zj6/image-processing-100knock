@@ -16,7 +16,7 @@ content button
   font-size: 15px;
   word-break: break-all;
   position: relative;
-  margin: 2%;
+  margin: 20px;
   font-size: 20px;
   vertical-align: top;
   box-shadow: 2px 2px 4px gray;
@@ -45,4 +45,6 @@ content button
 
 .btn-div{
   float: left;
+  text-align: center;
+  height: 200px;
 }
