@@ -1,0 +1,48 @@
+/*
+content button
+*/
+
+.content-btn{
+  display: inline-block;
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  border: solid 2px #000;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: .4s;
+  font-size: 15px;
+  word-break: break-all;
+  position: relative;
+  margin: 2%;
+  font-size: 20px;
+  vertical-align: top;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.content-btn:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 6px 6px 10px gray;
+  width: 180px;
+}
+
+.content-btn:focus{
+  outline: 0;
+}
+
+.content-block{
+  padding-top: 5%;
+}
+
+.title-ul{
+  padding-bottom: 1%;
+  border-bottom: 0.1em solid black;
+}
+
+.btn-div{
+  float: left;
+}

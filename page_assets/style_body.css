@@ -1,0 +1,26 @@
+  
+/*
+shared
+*/
+
+button:focus{
+  outline: 0;
+}
+
+body div{
+  font-family: "Comic Sans MS";
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.content {
+  width: 80%;
+}
+
+.clear-float {
+  clear: left;
+}
