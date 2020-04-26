@@ -2,51 +2,35 @@
 
 HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
-**追記 2019.11.7**
-
-Study-AI株式会社様　http://kentei.ai/
-のAI実装検定のシラバスに使用していただくことになりました！(ディープラーニング無限ノックも）
-Study-AI株式会社様ではAIスキルを学ぶためのコンテンツを作成されており、AIを学ぶ上でとても参考になります！
-検定も実施されてるので、興味ある方はぜひ受けることをお勧めします！
-
-***English is here*** (by KuKuXia)
-
-> https://github.com/KuKuXia/Image_Processing_100_Questions
-
-***Chinese is here***  (by gzr2017, my ex-colleague)
-
-> https://github.com/gzr2017/ImageProcessing100Wen
-
-**自分の画像で画像処理をためすPoC**
-> [IMORI](https://yoyoyo-yo.github.io/IMORI/) 
-
-**ディープラーニングのノックはこっち** 
-> [ディープラーニング∞本ノック!!](https://github.com/yoyoyo-yo/DeepLearningMugenKnock)
-
-## Description
-
 画像処理の初学者のための問題１００問ですうう(´；ω；｀)
 
 これはイモリと一緒に画像処理の基本的処理の知識を身に着け、アルゴリズムを理解するための100本ノックです。ここに載っている問題はOpenCVでAPIが用意されているものが殆どですが、**あえてそれを自分の手で実装**してください。解答も載っけてますが、それはあくまで解答です。自分で考えながら実装して下さい。
 
 - **問題の難易度の順番はめちゃくちゃです。なるべくポピュラーなものを採用していますが、ネタ切れであんまり聞かないものもあります笑**
-- **内容はいろいろな文献を調べて載っけてるので正しくないものもあるかもしれないので注意して下さい** まちがいがあったらプルリクもらえるととても助かります！！
+- まちがいがあったらプルリクもらえるととても助かります！！
 - 【注意】このページを利用して、または関して生じた事に関しては、私は一切責任を負いません。すべて**自己責任**でお願い致します。
 
-PythonとC++の好きな方でやってみてね♡（最近Javascriptも追加してるよ）
+意見や使用実績などあればご一報ください！もしこれがみなさんのお役に立ったらGithub Sponsorになってください！
 
-2019.5.14. これ金にならんかなぁ…
+## Adv
 
-意見や使用実績などあればご一報ください！
+- ***Study-AI株式会社様 http://kentei.ai/ のAI実装検定のシラバスに使用していただくことになりました！(ディープラーニング無限ノックも）Study-AI株式会社様ではAIスキルを学ぶためのコンテンツを作成されており、AIを学ぶ上でとても参考になります！
+検定も実施されてるので、興味ある方はぜひ受けることをお勧めします！***
 
-もしこれがみなさんのお役に立ったらGithub Sponsorになってください！
+- ***English ver (by KuKuXia) https://github.com/KuKuXia/Image_Processing_100_Questions***
+
+- ***Chinese ver (by gzr2017) https://github.com/gzr2017/ImageProcessing100Wen***
+
+- ***自分の画像で画像処理をためすSaas IMORI https://yoyoyo-yo.github.io/IMORI/***
+
+- ***ディープラーニング∞ノック!!は （ほぼTips化してるけど） https://github.com/yoyoyo-yo/DeepLearningMugenKnock)***
 
 ## Update
 
-Twitterで更新を発信してますぅ
+Twitterで更新を発信してますぅ https://twitter.com/curry_frog
 
-https://twitter.com/curry_frog
-
+- 2019.4.27 **#git cloneしなくてもいいように使用変更しました**
+- 2019.4.27 [Python]チュートリアルを更新 jupyter対応
 - 2019.12.16 自分の持ってる画像で画像処理をためすPoCを追加　[IMORI](https://yoyoyo-yo.github.io/IMORI/)　
 - 2019.11.22 [C++] Q.49~50 モルフォロジー処理（オープンイング、クロージング）を追加
 - 2019.11.21 [C++] Q.48 モルフォロジー処理（収縮）を追加
@@ -75,26 +59,22 @@ https://twitter.com/curry_frog
 - 2019.2.23 Q.6. 減色処理のREADMEを修正
 - 2019.1.29 HSVを修正
 
-## まずは
-
-gitをインストールします。そして、端末を開いて、このコマンドを実行します。このコマンドでこのディレクトリを丸ごと自分のパソコンにコピーできます。
-
-```bash
-$ git clone https://github.com/yoyoyo-yo/Gasyori100knock.git
-```
-
-そしたら、PythonかC++のやりたい方を選んで「**チュートリアル**」に進みましょう！
-
 ## [チュートリアル](Tutorial)
 
-| | 内容 | Python | C++ | JavaScript |
-|:---:|:---:|:---:|:---:|:---:|
-| 1 | インストール |  [&check;](Tutorial) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md) |[&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_javascript.md) |
-| 2 | 画像読み込み・表示 | [&check;](Tutorial#%E7%94%BB%E5%83%8F%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E8%A1%A8%E7%A4%BA) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md#%E7%94%BB%E5%83%8F%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/) | [&check;](README_javascript.md#%E7%94%BB%E5%83%8F%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E8%A1%A8%E7%A4%BA)
-| 3 | 画素をいじる| [&check;](Tutorial#%E7%94%BB%E7%B4%A0%E3%82%92%E3%81%84%E3%81%98%E3%82%8B) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md#%E7%94%BB%E7%B4%A0%E3%82%92%E3%81%84%E3%81%98%E3%82%8B) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_javascript.md#%E7%94%BB%E7%B4%A0%E3%82%92%E3%81%84%E3%81%98%E3%82%8B) | 
-| 4 | 画像のコピー | [&check;](Tutorial#%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md#%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_javascript.md#%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC) 
-| 5 | 画像の保存 | [&check;](Tutorial#%E7%94%BB%E5%83%8F%E3%81%AE%E4%BF%9D%E5%AD%98) | [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md#%E7%94%BB%E5%83%8F%E3%81%AE%E4%BF%9D%E5%AD%98) | ー |
-| 6 | 練習問題 | [&check;](Tutorial#%E7%B7%B4%E7%BF%92)| [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_opencv_c_install.md#%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C)| [&check;](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/README_javascript.md#%E7%B7%B4%E7%BF%92)
+What language do you use?
+
+- [Off cource python!](Tutorial/Tutorial_python.ipynb)
+- [I'm C++ !!](Tutorial/README_opencv_c_install.md)
+- [JavaScript is God!](Tutorial/README_javascript.md)
+
+どれも以下の内容です
+
+1. インストール
+2. 画像読み込み・表示
+3. 画像のコピー
+4. 画素をいじる
+5. 画像の保存
+6. 練習問題
 
 [MatplotlibとかOpenCVのTips](Image_processing_tips.ipynb)
 
@@ -104,6 +84,20 @@ $ git clone https://github.com/yoyoyo-yo/Gasyori100knock.git
 
 詳細な問題内容は各ディレクトリのREADMEにあります。（ディレクトリで下にスクロールすればあります）
 - numpy中心ですが、numpyの基本知識は自分で調べて下さい。
+
+### **画像をここから持ってこなくても、URL指定で読みこめるようにしました**
+
+使える画像
+- assets/imori_128x128.png (イモリの128x128サイズの画像)
+- assets/imori_256x256.png (イモリの256x256サイズの画像)
+- assets/imori_512x512.png (イモリの512x512サイズの画像)
+
+こういう感じで読み込めます！(詳しくは[Tutorial](Tutorial/Tutorial_python.ipynb))
+
+```python
+from skimage import io
+img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x256.png')
+```
 
 ### [問題1 - 10](Question_01_10)
 
