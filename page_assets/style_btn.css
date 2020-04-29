@@ -1,37 +1,31 @@
 /*
-content button
+style button
 */
 
-.content-btn{
-  display: inline-block;
-  text-decoration: none;
-  background: #fff;
+/*
+circle button
+*/
+
+.btn-circle {
+  background-color: #fff;
   color: #000;
   border: solid 2px #000;
+  display: inline-block;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  overflow: hidden;
   transition: .4s;
-  font-size: 15px;
   word-break: break-all;
-  position: relative;
   margin: 20px;
+  padding-top: var(--pad-top);
   font-size: 20px;
-  vertical-align: top;
   box-shadow: 2px 2px 4px gray;
 }
 
-.content-btn:hover{
-  background: black;
+.btn-circle:hover {
+  background-color: #333;
   color: white;
-  cursor: pointer;
-  box-shadow: 6px 6px 10px gray;
-  width: 120px;
-}
-
-.content-btn:focus{
-  outline: 0;
+  text-decoration: none;
 }
 
 .content-block{
@@ -74,11 +68,12 @@ Download button
 }
 
 .dl-btn::after{
-  content: "Download!";
+  content: var(--content-before);
+  /*content: "Download!";*/
 }
 
 .dl-btn:hover::after{
-  content: "Click!";
+  content: var(--content-after);
 }
 
 .dl-btn:hover{
