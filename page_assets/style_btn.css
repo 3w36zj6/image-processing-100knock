@@ -28,6 +28,45 @@ circle button
   text-decoration: none;
 }
 
+/*
+rectangle button
+*/
+.btn-rec{
+  background-color: #fff;
+  color: #333;
+  border: solid 2px #000;
+  display: inline-block;
+  height: 40px;
+  border-radius: 15px;
+  word-break: break-all;
+  padding-top: var(--pad-top);
+  font-size: 15px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.btn-rec:hover{
+  text-decoration: none;
+  color: #eee;
+  background-color: #333;
+}
+
+.text-change{
+  transition: .2s;
+  width: var(--width-before);
+}
+
+.text-change:hover {
+  width: var(--width-after);
+}
+
+.text-change::after {
+  content: var(--text-before);
+}
+
+.text-change:hover::after {
+  content: var(--text-after);
+}
+
 .content-block{
   padding-top: 5%;
 }
