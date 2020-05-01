@@ -37,8 +37,7 @@ rectangle button
   border: solid 2px #000;
   display: inline-block;
   height: 40px;
-  border-radius: 15px;
-  word-break: break-all;
+  border-radius: 10px;
   padding-top: var(--pad-top);
   font-size: 15px;
   box-shadow: 2px 2px 4px gray;
