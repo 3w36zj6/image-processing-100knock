@@ -99,7 +99,7 @@ from skimage import io
 img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x256.png')
 ```
 
-### [問題1 - 10](Question_01_10)
+### [問題1 - 10](Question_01_10/Question_01_10.ipynb)
 
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
