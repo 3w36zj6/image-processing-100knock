@@ -1,3 +1,5 @@
+<img src="assets/icon.png" width=300>
+
 # 画像処理100本ノック!!
 
 HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
