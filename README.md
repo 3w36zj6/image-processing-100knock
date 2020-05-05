@@ -84,8 +84,7 @@ What language do you use?
 
 ## 問題
 
-詳細な問題内容は各ディレクトリのREADMEにあります。（ディレクトリで下にスクロールすればあります）
-- numpy中心ですが、numpyの基本知識は自分で調べて下さい。
+問題内容とpythoの解答はjupyterであります。C++解答はファイルです。
 
 ### **画像をここから持ってこなくても、URL指定で読みこめるようにしました**
 
@@ -105,12 +104,21 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|[チャネル入れ替え](Question_01_10#q1-%E3%83%81%E3%83%A3%E3%83%8D%E3%83%AB%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88)| [&check;](Question_01_10/answers_py/answer_1.py) | [&check;](Question_01_10/answers_cpp/answer_1.cpp) | |6| [減色処理](Question_01_10#q6-%E6%B8%9B%E8%89%B2%E5%87%A6%E7%90%86) |[&check;](Question_01_10/answers_py/answer_6.py) | [&check;](Question_01_10/answers_cpp/answer_6.cpp) 
+|1 |  チャネル入れ替え| &check;| [&check;](Question_01_10/answers_cpp/answer_1.cpp) | |6| 減色処理| &check; | [&check;](Question_01_10/answers_cpp/answer_6.cpp) 
+|2|グレースケール化| &check;| [&check;](Question_01_10/answers_cpp/answer_2.cpp) | |7| 平均プーリング | &check;| [&check;](Question_01_10/answers_cpp/answer_7.cpp) 
+|3| 二値化| &check; | [&check;](Question_01_10/answers_cpp/answer_3.cpp)  | |8| Maxプーリング| &check;| [&check;](Question_01_10/answers_cpp/answer_8.cpp) 
+|4|大津の二値化 | &check;| [&check;](Question_01_10/answers_cpp/answer_4.cpp)  | |9| ガウシアンフィルタ| &check;| [&check;](Question_01_10/answers_cpp/answer_9.cpp) 
+|5| HSV変換| &check;| [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| メディアンフィルタ| &check;| [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
+
+<!--
+|番号|問題| Python | C++ | |番号|問題| Python | C++ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|1|[チャネル入れ替え](Question_01_10/Question_01_10.ipynb#q1)| [&check;](Question_01_10/answers_py/answer_1.py) | [&check;](Question_01_10/answers_cpp/answer_1.cpp) | |6| [減色処理](Question_01_10#q6-%E6%B8%9B%E8%89%B2%E5%87%A6%E7%90%86) |[&check;](Question_01_10/answers_py/answer_6.py) | [&check;](Question_01_10/answers_cpp/answer_6.cpp) 
 |2|[グレースケール化](Question_01_10#q2-%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB%E5%8C%96) |[&check;](Question_01_10/answers_py/answer_2.py) | [&check;](Question_01_10/answers_cpp/answer_2.cpp) | |7| [平均プーリング](Question_01_10#q7-%E5%B9%B3%E5%9D%87%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0) |[&check;](Question_01_10/answers_py/answer_7.py) | [&check;](Question_01_10/answers_cpp/answer_7.cpp) 
 |3|[二値化](Question_01_10#q3-%E4%BA%8C%E5%80%A4%E5%8C%96) | [&check;](Question_01_10/answers_py/answer_3.py) | [&check;](Question_01_10/answers_cpp/answer_3.cpp)  | |8| [Maxプーリング](Question_01_10#q8-max%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0) |[&check;](Question_01_10/answers_py/answer_8.py) | [&check;](Question_01_10/answers_cpp/answer_8.cpp) 
 |4|[大津の二値化](Question_01_10#q4-%E5%A4%A7%E6%B4%A5%E3%81%AE%E4%BA%8C%E5%80%A4%E5%8C%96) | [&check;](Question_01_10/answers_py/answer_4.py) | [&check;](Question_01_10/answers_cpp/answer_4.cpp)  | |9| [ガウシアンフィルタ](Question_01_10#q9-%E3%82%AC%E3%82%A6%E3%82%B7%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_9.py) | [&check;](Question_01_10/answers_cpp/answer_9.cpp) 
 |5|[HSV変換](Question_01_10#q5-hsv%E5%A4%89%E6%8F%9B) | [&check;](Question_01_10/answers_py/answer_5.py) | [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| [メディアンフィルタ](Question_01_10#q10-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_10.py) | [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
-
+-->
 ### [問題11 - 20](Question_11_20)
 
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
