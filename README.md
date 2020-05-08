@@ -31,8 +31,9 @@ HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
 Twitterで更新を発信してますぅ https://twitter.com/curry_frog
 
-- 2019.4.27 **#git cloneしなくてもいいように使用変更しました**
-- 2019.4.27 [Python]チュートリアルを更新 jupyter対応
+- 2020.5.8 Question 01-20をjupyter化。Google colabで使える様にして環境構築を必要なくしました。
+- 2020.4.27 **#git cloneしなくてもいいように使用変更しました**
+- 2020.4.27 [Python]チュートリアルを更新 jupyter対応
 - 2019.12.16 自分の持ってる画像で画像処理をためすPoCを追加　[IMORI](https://yoyoyo-yo.github.io/IMORI/)　
 - 2019.11.22 [C++] Q.49~50 モルフォロジー処理（オープンイング、クロージング）を追加
 - 2019.11.21 [C++] Q.48 モルフォロジー処理（収縮）を追加
@@ -119,8 +120,18 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |4|[大津の二値化](Question_01_10#q4-%E5%A4%A7%E6%B4%A5%E3%81%AE%E4%BA%8C%E5%80%A4%E5%8C%96) | [&check;](Question_01_10/answers_py/answer_4.py) | [&check;](Question_01_10/answers_cpp/answer_4.cpp)  | |9| [ガウシアンフィルタ](Question_01_10#q9-%E3%82%AC%E3%82%A6%E3%82%B7%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_9.py) | [&check;](Question_01_10/answers_cpp/answer_9.cpp) 
 |5|[HSV変換](Question_01_10#q5-hsv%E5%A4%89%E6%8F%9B) | [&check;](Question_01_10/answers_py/answer_5.py) | [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| [メディアンフィルタ](Question_01_10#q10-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_10.py) | [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
 -->
-### [問題11 - 20](Question_11_20)
 
+### [問題11 - 20](QQuestion_11_20/Question_11_20.ipynb)
+
+|番号|問題| Python | C++ | |番号|問題| Python | C++ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|11| 平滑化フィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_11.cpp) |  |16| Sobelフィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_16.cpp) | 
+|12| モーションフィルタ | &check;| [&check;](Question_11_20/answers_cpp/answer_12.cpp) |  |17| [aplacianフィルタ| &check; | [&check;](Question_11_20/answers_cpp/answer_17.cpp) | 
+|13| MAX-MINフィルタ | &check; | &check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| Embossフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
+|14| 微分フィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_14.cpp) |  |19| LoGフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_19.cpp) | 
+|16| Prewittフィルタ| &check; | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| ヒストグラム表示|  [&check;](Question_11_20/answers_py/answer_20.py) |
+
+<!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |11| [平滑化フィルタ](Question_11_20#q11-%E5%B9%B3%E6%BB%91%E5%8C%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_11.py) | [&check;](Question_11_20/answers_cpp/answer_11.cpp) |  |16| [Sobelフィルタ](Question_11_20#q15-sobel%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_16.py) | [&check;](Question_11_20/answers_cpp/answer_16.cpp) | 
@@ -128,6 +139,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |13| [MAX-MINフィルタ](Question_11_20#q13-max-min%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_13.py) | [&check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| [Embossフィルタ](Question_11_20#q18-emboss%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_18.py) | [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
 |14| [微分フィルタ](Question_11_20#q14-%E5%BE%AE%E5%88%86%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_14.py) | [&check;](Question_11_20/answers_cpp/answer_14.cpp) |  |19| [LoGフィルタ](Question_11_20#q19-log%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_19.py) | [&check;](Question_11_20/answers_cpp/answer_19.cpp) | 
 |16| [Prewittフィルタ](Question_11_20#q16-prewitt%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_15.py) | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| [ヒストグラム表示](Question_11_20#q20-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E8%A1%A8%E7%A4%BA)  |  [&check;](Question_11_20/answers_py/answer_20.py) |
+-->
 
 ### [問題21 - 30](Question_21_30)
 
