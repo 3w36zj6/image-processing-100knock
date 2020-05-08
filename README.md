@@ -121,7 +121,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |5|[HSV変換](Question_01_10#q5-hsv%E5%A4%89%E6%8F%9B) | [&check;](Question_01_10/answers_py/answer_5.py) | [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| [メディアンフィルタ](Question_01_10#q10-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_10.py) | [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
 -->
 
-### [問題11 - 20](QQuestion_11_20/Question_11_20.ipynb)
+### [問題11 - 20](Question_11_20/Question_11_20.ipynb)
 
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
