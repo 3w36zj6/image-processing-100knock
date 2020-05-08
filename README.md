@@ -127,7 +127,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |11| 平滑化フィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_11.cpp) |  |16| Sobelフィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_16.cpp) | 
 |12| モーションフィルタ | &check;| [&check;](Question_11_20/answers_cpp/answer_12.cpp) |  |17| [aplacianフィルタ| &check; | [&check;](Question_11_20/answers_cpp/answer_17.cpp) | 
-|13| MAX-MINフィルタ | &check; | &check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| Embossフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
+|13| MAX-MINフィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| Embossフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
 |14| 微分フィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_14.cpp) |  |19| LoGフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_19.cpp) | 
 |16| Prewittフィルタ| &check; | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| ヒストグラム表示|  [&check;](Question_11_20/answers_py/answer_20.py) |
 
