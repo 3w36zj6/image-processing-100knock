@@ -64,3 +64,7 @@ cotent title
   transition: .5s;
 }
 
+.content-horizon {
+  float: left;
+  width: var(--width);
+}
