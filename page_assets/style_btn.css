@@ -83,6 +83,23 @@ rectangle button
 
 
 /*
+link button
+*/
+
+.link-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: .2s;
+  /*box-shadow: 3px 3px 3px gray;*/
+}
+
+.link-btn:hover {
+  /*box-shadow: 6px 6px 6px gray;*/
+  background-color: greenyellow;
+}
+
+/*
 Download button
 */
 
@@ -102,7 +119,7 @@ Download button
   overflow: hidden;
   position: relative;
   z-index: 2;
-  width: 100px;
+  width: 120px;
 }
 
 .dl-btn::after{
@@ -120,6 +137,42 @@ Download button
   text-decoration: none;
 }
 
+
+
+.dl-img-div {
+	width: 300px;
+	height:	100px;
+	overflow:	hidden;
+  position:	relative;
+}
+
+.dl-img{
+  width: var(--width);
+  height: var(--height);
+}
+
+.dl-img-caption {
+	font-size: 20px;
+	text-align: center;
+	color:#fff;
+	padding-top: 30px;
+}
+.dl-img-mask {
+	width: 100px;
+	height:	100px;
+	position:	absolute;
+	top:			0;
+	margin-left: 100px;
+	opacity:		0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.2s ease-out;
+	transition:		all 0.2s ease-out;
+}
+.dl-img-div:hover .dl-img-mask {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
 
 /* below is from https://www.nxworld.net/tips/css-only-button-design-and-hover-effects.html */
 /*
@@ -181,3 +234,74 @@ Download button
   font-size: 20px;
 }
 */
+
+
+.tutorial-link-btn::before{
+  right: 0;
+  top: 0;
+}
+.tutorial-link-btn::after{
+  left: 0;
+  bottom: 0;
+}
+.tutorial-link-btn span::before{
+  left: 0;
+  top: 0;
+}
+.tutorial-link-btn span::after{
+  right: 0;
+  bottom: 0;
+}
+
+
+.tutorial-link-btn{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgba(0, 0, 0, 0.0);
+  width: 300px;
+  transition: .2s;
+  border: solid 2px black;
+}
+
+.tutorial-link-btn:hover {
+  background: rgba(0, 0, 0, 0.0);
+  border: solid 0px black;
+  text-decoration: none;
+}
+
+.tutorial-link-btn span{
+  display: block;
+  padding: 25px 30px;
+}
+.tutorial-link-btn::before, .tutorial-link-btn::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgba(0, 50, 120, 0.6);
+  transition-delay: 0.2s;
+}
+
+.tutorial-link-btn span::before, .tutorial-link-btn span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgba(0, 50, 120, 0.9);
+  transition-delay: 0.2s;
+}
+.tutorial-link-btn:hover::before, .tutorial-link-btn:hover::after{
+  width: 100%;
+}
+.tutorial-link-btn:hover span::before, .tutorial-link-btn:hover span::after{
+  height: 100%;
+  transition-delay: 0.s;
+}
