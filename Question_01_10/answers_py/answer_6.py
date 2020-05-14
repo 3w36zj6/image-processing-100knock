@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 
-# Dicrease color
-def dicrease_color(img):
+# Decrease color
+def decrease_color(img):
 	out = img.copy()
 
 	out = out // 64 * 64 + 32
