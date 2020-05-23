@@ -66,7 +66,7 @@ Twitterで更新を発信してますぅ https://twitter.com/curry_frog
 
 What language do you use?
 
-- [Off cource python!](Tutorial/Tutorial_python.ipynb)
+- [Off cource python!](Tutorial/Tutorial_python.ipynb) &emsp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Tutorial/Tutorial_python.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - [I'm C++ !!](Tutorial/README_opencv_c_install.md)
 - [JavaScript is God!](Tutorial/README_javascript.md)
 
