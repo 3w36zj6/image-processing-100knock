@@ -101,8 +101,9 @@ from skimage import io
 img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x256.png')
 ```
 
-### [問題1 - 10](Question_01_10/Question_01_10.ipynb)
+## [問題1 - 10](Question_01_10/Question_01_10.ipynb) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/Question_01_10.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+<!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1 |  チャネル入れ替え| &check;| [&check;](Question_01_10/answers_cpp/answer_1.cpp) | |6| 減色処理| &check; | [&check;](Question_01_10/answers_cpp/answer_6.cpp) 
@@ -110,8 +111,8 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |3| 二値化| &check; | [&check;](Question_01_10/answers_cpp/answer_3.cpp)  | |8| Maxプーリング| &check;| [&check;](Question_01_10/answers_cpp/answer_8.cpp) 
 |4|大津の二値化 | &check;| [&check;](Question_01_10/answers_cpp/answer_4.cpp)  | |9| ガウシアンフィルタ| &check;| [&check;](Question_01_10/answers_cpp/answer_9.cpp) 
 |5| HSV変換| &check;| [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| メディアンフィルタ| &check;| [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
+-->
 
-<!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1|[チャネル入れ替え](Question_01_10/Question_01_10.ipynb#q1)| [&check;](Question_01_10/answers_py/answer_1.py) | [&check;](Question_01_10/answers_cpp/answer_1.cpp) | |6| [減色処理](Question_01_10#q6-%E6%B8%9B%E8%89%B2%E5%87%A6%E7%90%86) |[&check;](Question_01_10/answers_py/answer_6.py) | [&check;](Question_01_10/answers_cpp/answer_6.cpp) 
@@ -119,10 +120,11 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |3|[二値化](Question_01_10#q3-%E4%BA%8C%E5%80%A4%E5%8C%96) | [&check;](Question_01_10/answers_py/answer_3.py) | [&check;](Question_01_10/answers_cpp/answer_3.cpp)  | |8| [Maxプーリング](Question_01_10#q8-max%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0) |[&check;](Question_01_10/answers_py/answer_8.py) | [&check;](Question_01_10/answers_cpp/answer_8.cpp) 
 |4|[大津の二値化](Question_01_10#q4-%E5%A4%A7%E6%B4%A5%E3%81%AE%E4%BA%8C%E5%80%A4%E5%8C%96) | [&check;](Question_01_10/answers_py/answer_4.py) | [&check;](Question_01_10/answers_cpp/answer_4.cpp)  | |9| [ガウシアンフィルタ](Question_01_10#q9-%E3%82%AC%E3%82%A6%E3%82%B7%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_9.py) | [&check;](Question_01_10/answers_cpp/answer_9.cpp) 
 |5|[HSV変換](Question_01_10#q5-hsv%E5%A4%89%E6%8F%9B) | [&check;](Question_01_10/answers_py/answer_5.py) | [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| [メディアンフィルタ](Question_01_10#q10-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_10.py) | [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
--->
 
-### [問題11 - 20](Question_11_20/Question_11_20.ipynb)
 
+## [問題11 - 20](Question_11_20/Question_11_20.ipynb) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_11_20/Question_11_20.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+<!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |11| 平滑化フィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_11.cpp) |  |16| Sobelフィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_16.cpp) | 
@@ -130,8 +132,8 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |13| MAX-MINフィルタ | &check; | [&check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| Embossフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
 |14| 微分フィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_14.cpp) |  |19| LoGフィルタ| &check;| [&check;](Question_11_20/answers_cpp/answer_19.cpp) | 
 |16| Prewittフィルタ| &check; | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| ヒストグラム表示|  [&check;](Question_11_20/answers_py/answer_20.py) |
+-->
 
-<!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |11| [平滑化フィルタ](Question_11_20#q11-%E5%B9%B3%E6%BB%91%E5%8C%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_11.py) | [&check;](Question_11_20/answers_cpp/answer_11.cpp) |  |16| [Sobelフィルタ](Question_11_20#q15-sobel%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_16.py) | [&check;](Question_11_20/answers_cpp/answer_16.cpp) | 
@@ -139,7 +141,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |13| [MAX-MINフィルタ](Question_11_20#q13-max-min%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_13.py) | [&check;](Question_11_20/answers_cpp/answer_13.cpp) |  |18| [Embossフィルタ](Question_11_20#q18-emboss%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_18.py) | [&check;](Question_11_20/answers_cpp/answer_18.cpp) | 
 |14| [微分フィルタ](Question_11_20#q14-%E5%BE%AE%E5%88%86%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_14.py) | [&check;](Question_11_20/answers_cpp/answer_14.cpp) |  |19| [LoGフィルタ](Question_11_20#q19-log%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_19.py) | [&check;](Question_11_20/answers_cpp/answer_19.cpp) | 
 |16| [Prewittフィルタ](Question_11_20#q16-prewitt%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_15.py) | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| [ヒストグラム表示](Question_11_20#q20-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E8%A1%A8%E7%A4%BA)  |  [&check;](Question_11_20/answers_py/answer_20.py) |
--->
+
 
 ### [問題21 - 30](Question_21_30)
 
