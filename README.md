@@ -25,7 +25,7 @@ HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
 - ***自分の画像で画像処理をためすSaas IMORI https://yoyoyo-yo.github.io/IMORI/***
 
-- ***ディープラーニング∞ノック!!は （ほぼTips化してるけど） https://github.com/yoyoyo-yo/DeepLearningMugenKnock)***
+- ***ディープラーニング∞ノック!!は （ほぼTips化してるけど） https://github.com/yoyoyo-yo/DeepLearningMugenKnock***
 
 ## Update
 
@@ -90,9 +90,14 @@ What language do you use?
 ### **画像をここから持ってこなくても、URL指定で読みこめるようにしました**
 
 使える画像
-- assets/imori_128x128.png (イモリの128x128サイズの画像)
-- assets/imori_256x256.png (イモリの256x256サイズの画像)
-- assets/imori_512x512.png (イモリの512x512サイズの画像)
+| assets/imori_128x128.png (イモリの128x128サイズの美しい画像) | assets/imori_256x256.png (イモリの256x256サイズのかわゆい画像) |  assets/imori_512x512.png (イモリの512x512サイズのめんこいお画像) | assets/madara_128x128.png (マダライモリの128x128サイズのかわいらしい画像) | assets/madara_256x256.png (マダライモリの256x256サイズのかわない画像) |  assets/madara_512x512.png (マダライモリの512x512サイズのキュートな画像) | 
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| <img src="assets/imori_128x128.png" width=60> | <img src="assets/imori_256x256.png" width=120> | <img src="assets/imori_512x512.png" width=240> | <img src="assets/madara_128x128.png" width=60> | <img src="assets/madara_256x256.png" width=120> | <img src="assets/madara_512x512.png" width=240> |
+
+|　assets/imori_256x256_noise.png (ノイジーなイモリのノイズ入り画像) | assets/imori_256x256_dark.png (暗いイモリのかわいい画像) |  assets/imori_256x256_light.png (明るいイモリのかわいい画像) |  assets/imori_256x256_gamma.png (gammaされたイモリのかわいい画像) |
+|:---:|:---:|:---:|:---:|
+| <img src="assets/imori_256x256_noise.png" width=150> | <img src="assets/imori_256x256_dark.png" width=150> | <img src="assets/imori_256x256_light.png" width=150> | <img src="assets/imori_256x256_gamma.png" width=150> |
+
 
 こういう感じで読み込めます！(詳しくは[Tutorial](Tutorial/Tutorial_python.ipynb))
 
@@ -148,7 +153,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |21| [ヒストグラム正規化](Question_21_30#q21-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E6%AD%A3%E8%A6%8F%E5%8C%96) | [&check;](Question_21_30/answers_py/answer_21.py) | [&check;](Question_21_30/answers_cpp/answer_21.cpp) |  |26| [Bi-linear補間](Question_21_30#q26-bi-linear%E8%A3%9C%E9%96%93) | [&check;](Question_21_30/answers_py/answer_26.py) | [&check;](Question_21_30/answers_cpp/answer_26.cpp)  |
-|22| [ヒストグラム操作](Question_21_30#q22-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E6%93%8D%E4%BD%9C) | [&check;](Question_21_30/answers_py/answer_22.py) | [&check;](Question_21_30/answers_cpp/answer_22.cpp)  | |27| [Bi-cubic補間](Question_21_30#q27-bi-cubic%E8%A3%9C%E9%96%93) | [&check;](Question_21_30/answers_py/answer_27.py) | [&check;](Question_21_30/answers_cpp/answer_27.cpp)  |
+|22| [ヒストグラムのスケーリングとシフト](Question_21_30#q22-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E6%93%8D%E4%BD%9C) | [&check;](Question_21_30/answers_py/answer_22.py) | [&check;](Question_21_30/answers_cpp/answer_22.cpp)  | |27| [Bi-cubic補間](Question_21_30#q27-bi-cubic%E8%A3%9C%E9%96%93) | [&check;](Question_21_30/answers_py/answer_27.py) | [&check;](Question_21_30/answers_cpp/answer_27.cpp)  |
 | 23| [ヒストグラム平坦化](Question_21_30#q23-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E5%B9%B3%E5%9D%A6%E5%8C%96) | [&check;](Question_21_30/answers_py/answer_23.py) | [&check;](Question_21_30/answers_cpp/answer_23.cpp)  | |28| [アフィン変換(平行移動)](Question_21_30#q28-%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E5%A4%89%E6%8F%9B%E5%B9%B3%E8%A1%8C%E7%A7%BB%E5%8B%95) | [&check;](Question_21_30/answers_py/answer_28.py) | [&check;](Question_21_30/answers_cpp/answer_28.cpp)  |
 | 24| [ガンマ補正](Question_21_30#q24-%E3%82%AC%E3%83%B3%E3%83%9E%E8%A3%9C%E6%AD%A3) | [&check;](Question_21_30/answers_py/answer_24.py) | [&check;](Question_21_30/answers_cpp/answer_24.cpp)  | |29| [アフィン変換(拡大縮小)](Question_21_30#q29-%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E5%A4%89%E6%8F%9B%E6%8B%A1%E5%A4%A7%E7%B8%AE%E5%B0%8F) | [&check;](Question_21_30/answers_py/answer_29.py) | [&check;](Question_21_30/answers_cpp/answer_29.cpp)  |
 |25| [最近傍補間](Question_21_30#q25-%E6%9C%80%E8%BF%91%E5%82%8D%E8%A3%9C%E9%96%93) | [&check;](Question_21_30/answers_py/answer_25.py) | [&check;](Question_21_30/answers_cpp/answer_25.cpp)  | |30| [アフィン変換(回転)](Question_21_30#q30-%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E5%A4%89%E6%8F%9B%E5%9B%9E%E8%BB%A2) | [&check;](Question_21_30/answers_py/answer_30.py) | [&check;](Question_21_30/answers_cpp/answer_30.cpp)
