@@ -6,6 +6,8 @@ HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
 画像処理の初学者のための問題１００問ですうう(´；ω；｀)
 
+**問題も答えもjupyterのをみてください（最新版です）**
+
 これはイモリと一緒に画像処理の基本的処理の知識を身に着け、アルゴリズムを理解するための100本ノックです。ここに載っている問題はOpenCVでAPIが用意されているものが殆どですが、**あえてそれを自分の手で実装**してください。解答も載っけてますが、それはあくまで解答です。自分で考えながら実装して下さい。
 
 - **問題の難易度の順番はめちゃくちゃです。なるべくポピュラーなものを採用していますが、ネタ切れであんまり聞かないものもあります笑**
@@ -31,6 +33,7 @@ HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
 Twitterで更新を発信してますぅ https://twitter.com/curry_frog
 
+- 2020.5.30 Question 21-30をjupyter化
 - 2020.5.8 Question 01-20をjupyter化。Google colabで使える様にして環境構築を必要なくしました。
 - 2020.4.27 **#git cloneしなくてもいいように使用変更しました**
 - 2020.4.27 [Python]チュートリアルを更新 jupyter対応
@@ -85,7 +88,7 @@ What language do you use?
 
 ## 問題
 
-問題内容とpythoの解答はjupyterであります。C++解答はファイルです。
+### **問題も答えもjupyterのをみてください（最新版です）**
 
 ### **画像をここから持ってこなくても、URL指定で読みこめるようにしました**
 
@@ -106,7 +109,7 @@ from skimage import io
 img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x256.png')
 ```
 
-## [問題1 - 10](Question_01_10/Question_01_10.ipynb) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/Question_01_10.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+## [問題1 - 10](Question_01_10) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/Question_01_10.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 <!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
@@ -127,7 +130,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |5|[HSV変換](Question_01_10#q5-hsv%E5%A4%89%E6%8F%9B) | [&check;](Question_01_10/answers_py/answer_5.py) | [&check;](Question_01_10/answers_cpp/answer_5.cpp) | |10| [メディアンフィルタ](Question_01_10#q10-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_01_10/answers_py/answer_10.py) | [&check;](Question_01_10/answers_cpp/answer_10.cpp) |
 
 
-## [問題11 - 20](Question_11_20/Question_11_20.ipynb) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_11_20/Question_11_20.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+## [問題11 - 20](Question_11_20) &ensp; <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_11_20/Question_11_20.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 <!--
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
@@ -148,7 +151,7 @@ img = io.imread('https://yoyoyo-yo.github.io/Gasyori100knock/assets/imori_256x25
 |16| [Prewittフィルタ](Question_11_20#q16-prewitt%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF) | [&check;](Question_11_20/answers_py/answer_15.py) | [&check;](Question_11_20/answers_cpp/answer_15.cpp) |  |20| [ヒストグラム表示](Question_11_20#q20-%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E8%A1%A8%E7%A4%BA)  |  [&check;](Question_11_20/answers_py/answer_20.py) |
 
 
-### [問題21 - 30](Question_21_30)
+## [問題21 - 30](Question_21_30) &ensp;  <a href="https://colab.research.google.com/github/yoyoyo-yo/Gasyori100knock/blob/master/Question_21_30/Question_21_30.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 |番号|問題| Python | C++ | |番号|問題| Python | C++ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
