@@ -31,8 +31,6 @@ HOMEPAGE >> https://yoyoyo-yo.github.io/Gasyori100knock/
 
 ## Update
 
-Twitterで更新を発信してますぅ https://twitter.com/curry_frog
-
 - 2020.5.30 Question 21-30をjupyter化
 - 2020.5.8 Question 01-20をjupyter化。Google colabで使える様にして環境構築を必要なくしました。
 - 2020.4.27 **#git cloneしなくてもいいように使用変更しました**
